@@ -1,4 +1,4 @@
-export interface IButtonLinks {
+export default interface IButtonLinks {
     caminho: string
     text: string
-} 
+}

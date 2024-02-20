@@ -16,16 +16,18 @@ const CalculadoraSemRec = () => {
     }
 
     return (
-        <form className="flex flex-col m-16" onSubmit={printaNota}>
-            <div className="py-10">
-                <label htmlFor="numero">Nota de Grau 1: </label>
-                <input type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
-            </div>
+        <form className="text-base flex flex-col gap-24 items-center m-16" onSubmit={printaNota}>
+            <section className="lg:flex lg:gap-48">
+                <div className="py-10">
+                    <label htmlFor="numero">Nota de Grau 1: </label>
+                    <input type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
+                </div>
 
-            <div className="py-10">
-                <label htmlFor="numero">Nota de Grau 2: </label>
-                <input type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
-            </div>
+                <div className="py-10">
+                    <label htmlFor="numero">Nota de Grau 2: </label>
+                    <input type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
+                </div>
+            </section>
 
             <button className="bg-secundaria py-2 rounded-8 hover:bg-hover" type="submit">Calucular nota semestral</button>
         </form>
