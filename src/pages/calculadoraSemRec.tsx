@@ -1,5 +1,6 @@
 import { useState } from "react";
 import calculoSemRecuperacao from "../common/calculoSemRecuperacao";
+import Botao from "../componts/button";
 
 const CalculadoraSemRec = () => {
 
@@ -20,16 +21,16 @@ const CalculadoraSemRec = () => {
             <section className="lg:flex lg:gap-48">
                 <div className="py-10">
                     <label htmlFor="numero">Nota de Grau 1: </label>
-                    <input type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
+                    <input className='rounded' type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
                 </div>
 
                 <div className="py-10">
                     <label htmlFor="numero">Nota de Grau 2: </label>
-                    <input type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
+                    <input className='rounded' type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
                 </div>
             </section>
 
-            <button className="bg-secundaria py-2 rounded-8 hover:bg-hover" type="submit">Calucular nota semestral</button>
+            <Botao text="Calcular nota final" />
         </form>
     )
 }
