@@ -21,12 +21,12 @@ const CalculadoraSemRec = () => {
             <section className="lg:flex lg:gap-48">
                 <div className="py-10">
                     <label htmlFor="numero">Nota de Grau 1: </label>
-                    <input className='rounded' type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
+                    <input className='rounded text-black text-base' type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
                 </div>
 
                 <div className="py-10">
                     <label htmlFor="numero">Nota de Grau 2: </label>
-                    <input className='rounded' type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
+                    <input className='rounded text-black text-base' type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
                 </div>
             </section>
 
