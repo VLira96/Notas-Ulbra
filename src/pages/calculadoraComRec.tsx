@@ -36,7 +36,7 @@ const CalculadoraComRec = () => {
                 </div>
             </section>
 
-            <Botao text="Calcular nota semestral" />
+            <Botao text="Calcular nota final" />
         </form>
 
     )
