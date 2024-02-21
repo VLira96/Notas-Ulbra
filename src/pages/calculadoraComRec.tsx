@@ -19,7 +19,7 @@ const CalculadoraComRec = () => {
 
     return (
         <form className="text-base flex flex-col gap-24 items-center m-16" onSubmit={printaNota}>
-            <section className='lg:flex lg:gap-48'>
+            <section className='lg:gap-48 flex flex-col lg:flex-row items-center'>
                 <div className="py-10">
                     <label htmlFor="numero">Nota de Grau 1: </label>
                     <input className='rounded text-black text-base' type="number" onChange={(evento) => setG1(Number(evento.target.value))} id='g1' step={0.1} max={10} min={0} required />
