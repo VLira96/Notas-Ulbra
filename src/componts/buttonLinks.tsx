@@ -6,7 +6,7 @@ const ButtonLinks = (props: IButtonLinks) => {
         <Link className="m-4 w-24 lg:w-56 text-base py-1 px-2" to={props.caminho}>
             {props.text}
         </Link>
-    )
+    );
 }
 
 export default ButtonLinks;

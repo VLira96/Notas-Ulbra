@@ -9,8 +9,7 @@ const Header = () => {
                 <ButtonLinks caminho='/nota/comrecuperacao' text='Nota com recuperação' />
             </nav>
         </header>
-
-    )
+    );
 }
 
 export default Header;
