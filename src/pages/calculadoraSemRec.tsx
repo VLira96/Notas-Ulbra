@@ -33,7 +33,7 @@ const CalculadoraSemRec = () => {
                 </div>
             </section>
             {precionado ? <MostraNota nota={nota} /> : null}
-            <Botao text="Calcular nota semestral" setPrecionado={setPrecionado} precionado={precionado} />
+            <Botao text="Calcular média parcial" setPrecionado={setPrecionado} precionado={precionado} />
         </form>
     );
 }
