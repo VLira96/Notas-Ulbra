@@ -19,7 +19,6 @@ const CalculadoraComRec = () => {
         evento.preventDefault();
     }
 
-
     return (
         <form className="text-base flex flex-col gap-24 items-center m-16" onSubmit={printaNota}>
             <section className='lg:gap-48 flex flex-col lg:flex-row items-center'>
@@ -38,7 +37,9 @@ const CalculadoraComRec = () => {
                     <input className='rounded text-black text-base' type="number" onChange={(evento) => setRec(Number(evento.target.value))} id='rec' step={0.1} max={10} min={0} required />
                 </div>
             </section>
+
             {precionado ? <MostraNota nota={nota} /> : null}
+
             <Botao precionado={precionado} setPrecionado={setPrecionado} text="Calcular nota final" />
         </form>
     );

@@ -12,4 +12,4 @@ root.render(
   </React.StrictMode>
 );
 
-document.body.classList.add('bg-primaria', 'text-texto-primario', 'w-full');
+document.body.classList.add('bg-primaria', 'text-texto-primario', 'w-full', 'font-sans');
