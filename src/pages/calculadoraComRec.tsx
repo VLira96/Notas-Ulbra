@@ -40,7 +40,7 @@ const CalculadoraComRec = () => {
 
             {precionado ? <MostraNota nota={nota} /> : null}
 
-            <Botao precionado={precionado} setPrecionado={setPrecionado} text="Calcular nota final" />
+            <Botao precionado={precionado} setPrecionado={setPrecionado} text="Calcular média final" />
         </form>
     );
 }
