@@ -1,5 +1,7 @@
+import { ReactNode } from "react"
+
 export default interface IBotao {
-    text: string
+    children: ReactNode
     setPrecionado: React.Dispatch<React.SetStateAction<boolean>>
     precionado: boolean
 }
