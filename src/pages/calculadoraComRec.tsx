@@ -38,7 +38,7 @@ const CalculadoraComRec = () => {
                 </div>
             </section>
 
-            {precionado && g1 <= 10 && g1 >= 0 && g2 <= 10 && g2 >= 0 && rec <= 10 && rec >= 0 && <MostraNota nota={nota} />}
+            {precionado && g1 <= 10 && g1 >= 0 && g2 <= 10 && g2 >= 0 && rec <= 10 && rec >= 0 && <MostraNota nota={Number(nota.toFixed(1))} />}
 
             <Botao precionado={precionado} setPrecionado={setPrecionado}>Calcular média final</Botao>
         </form>

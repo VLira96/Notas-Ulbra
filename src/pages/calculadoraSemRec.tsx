@@ -32,7 +32,7 @@ const CalculadoraSemRec = () => {
                     <input className='rounded text-black text-base' type="number" onChange={(evento) => setG2(Number(evento.target.value))} id='g2' step={0.1} max={10} min={0} required />
                 </div>
             </section>
-            {precionado && g1 <= 10 && g1 >= 0 && g2 <= 10 && g2 >= 0 && <MostraNota nota={nota} />}
+            {precionado && g1 <= 10 && g1 >= 0 && g2 <= 10 && g2 >= 0 && <MostraNota nota={Number(nota.toFixed(1))} />}
             <Botao setPrecionado={setPrecionado} precionado={precionado}>Calcular média parcial</Botao>
         </form>
     );
